@@ -1,5 +1,6 @@
 import React from 'react';
 import Spline from '@splinetool/react-spline';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -30,12 +31,12 @@ const Hero = () => {
           Build, deploy, and scale AI voice agents that feel natural, respond instantly, and integrate seamlessly with your tooling.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a href="#pricing" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-lg shadow-white/10 transition hover:opacity-90">
+          <Link to="/pricing" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-slate-900 shadow-lg shadow-white/10 transition hover:opacity-90">
             Get started
-          </a>
-          <a href="#features" className="rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white/90 backdrop-blur hover:bg-white/10">
+          </Link>
+          <Link to="/features" className="rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white/90 backdrop-blur hover:bg-white/10">
             Explore features
-          </a>
+          </Link>
         </div>
       </div>
     </section>
